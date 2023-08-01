@@ -7,4 +7,5 @@ function test(a, b) {
   console.log(a * b);
   let a = 6;
   console.log(a * b);
+  
 }
