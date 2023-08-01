@@ -110,6 +110,7 @@ section {
   #mohamed .section-1 .form:hover {
   box-shadow: 0 0 15px 1px rgb(25,96,124);
 }
+
 #mohamed .section-1 .form button{
     border: none;
     outline: none;
@@ -121,6 +122,14 @@ section {
   }
   .section-1 .form button svg{
     fill: rgb(25,96,124);
+  }
+  #mohamed .section-1 .container:focus-within .search-icon svg {
+    fill: black;
+  }
+  
+  
+  #mohamed .section-1 .container input:focus + .scan-icon svg {
+    fill: black;
   }
   .section-1 .form svg:hover{
     fill: black;
