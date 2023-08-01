@@ -52,3 +52,9 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 // IntersectionObserver accepts callback function + options object
 
 sections.forEach((sec) => observer.observe(sec));
+
+// takas
+//* 1/8/2023 ===========================
+  // 
+  // 
+  // 
