@@ -55,6 +55,13 @@ sections.forEach((sec) => observer.observe(sec));
 
 // takas
 //* 1/8/2023 ===========================
-  // 
-  // 
-  // 
+// IFEE = >
+
+// provide variable with all built in data types in js :
+// => EX: let number = 10;
+// => EX: let string = 'text';
+
+// 
+
+// *optional:  provide function that calculate array of serialized numbers
+// * EX: function calc([1,2,3]) => return 6;
