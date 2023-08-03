@@ -15,13 +15,12 @@ myList.addEventListener('click',function(e){
   // console.log(e);
   const  target = e.target;
   if (target.matches("li")){
-    target.style.backgroundColor = red;
+    target.style.backgroundColor = 'red';
 
   }
-
+});
 
   // add li
   const newli = document.createElement("li");
   newli.textContent = "dcode";
   myList.appendChild(newli);
-});
