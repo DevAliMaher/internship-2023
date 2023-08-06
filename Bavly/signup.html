@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Page</title>
+    <title>SIGN UP</title>
     <link rel="stylesheet" href="./signup.css" />
   </head>
   <body>
@@ -12,24 +12,24 @@
       <span class="pg-animation-2"></span>
       <div class="form-box register">
         <h2>SIGN UP</h2>
-        <form action="#" method="post">
+        <form action="http://localhost:5000/login" method="POST">
           <div class="input-box">
-            <input type="text" required />
+            <input name="name" type="text" required />
             <label>User Name</label>
             <i class="bx bxs-user"></i>
           </div>
           <div class="input-box">
-            <input type="number" required />
+            <input name="phone" type="number" required />
             <label>Phone Number</label>
             <i class="bx bx-phone"></i>
           </div>
           <div class="input-box">
-            <input type="email" required />
+            <input name="email" type="email" required />
             <label>Email</label>
             <i class="bx bxs-envelope"></i>
           </div>
           <div class="input-box">
-            <input type="password" required />
+            <input name="password" type="password" required />
             <label>password</label>
             <i class="bx bxs-lock-alt"></i>
           </div>
