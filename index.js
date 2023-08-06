@@ -1,3 +1,13 @@
+// first js modules commonJs => require('') => sync => not suitable for browser.
+
+// sec AMD => async
+
+// ESModules => export & import => async
+
+import { test } from "./omar/omar1.js";
+
+console.log(test);
+
 function selectElementByClass(className) {
   return document.querySelector(`.${className}`);
 }
@@ -61,7 +71,7 @@ sections.forEach((sec) => observer.observe(sec));
 // => EX: let number = 10;
 // => EX: let string = 'text';
 
-// 
+//
 
 // *optional:  provide function that calculate array of serialized numbers
 // * EX: function calc([1,2,3]) => return 6;
