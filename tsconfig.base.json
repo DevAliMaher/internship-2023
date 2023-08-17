@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["libs/components/src/index.ts"],
+      "@routes": ["libs/routes/src/index.ts"],
+      "@routes/contact-us": ["libs/routes/contact-us/src/index.ts"],
+      "@routes/food-description": ["libs/routes/food-description/src/index.ts"],
+      "@routes/food-list": ["libs/routes/food-list/src/index.ts"],
+      "@routes/home": ["libs/routes/home/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

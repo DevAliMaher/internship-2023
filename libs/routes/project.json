@@ -1,0 +1,60 @@
+{
+  "name": "routes",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/routes/src",
+  "prefix": "bm",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/routes/ng-package.json",
+        "tailwindConfig": "libs/routes/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/routes/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/routes/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/routes/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/routes/**/*.ts",
+          "libs/routes/**/*.html",
+          "libs/routes/package.json",
+          "libs/routes/home/**/*.ts",
+          "libs/routes/home/**/*.html",
+          "libs/routes/contact-us/**/*.ts",
+          "libs/routes/contact-us/**/*.html",
+          "libs/routes/food-list/**/*.ts",
+          "libs/routes/food-list/**/*.html",
+          "libs/routes/food-description/**/*.ts",
+          "libs/routes/food-description/**/*.html"
+        ]
+      }
+    }
+  }
+}
